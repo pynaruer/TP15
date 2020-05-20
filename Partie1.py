@@ -1,7 +1,6 @@
-from PySide2.QtWidgets import *
+from Partie2 import *
 
 class SQLClientWindow(QWidget):
-
     def __init__(self):
         QWidget.__init__(self)
 
@@ -22,7 +21,6 @@ class SQLClientWindow(QWidget):
         self.setLayout(layout)
 
 class ButtonsPanel(QWidget):
-
     def __init__(self):
         QWidget.__init__(self)
 
@@ -37,9 +35,3 @@ class ButtonsPanel(QWidget):
         layout.addWidget(button_3)
 
         self.setLayout(layout)
-
-if __name__ == "__main__":
-    app = QApplication([])
-    win1 = SQLClientWindow()
-    win1.show()
-    app.exec_()

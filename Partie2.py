@@ -1,8 +1,6 @@
 from PySide2.QtWidgets import *
 
-
 class LabeledTextField(QWidget):
-
     def __init__(self, text):
         QWidget.__init__(self)
         self.text = text
@@ -19,7 +17,6 @@ class LabeledTextField(QWidget):
         self.setLayout(layout)
 
 class ConfigurationDialog(QDialog):
-
     def __init__(self):
         QDialog.__init__(self)
 
@@ -37,9 +34,3 @@ class ConfigurationDialog(QDialog):
         layout.addWidget(label_3)
 
         self.setLayout(layout)
-
-if __name__ == "__main__":
-    app = QApplication([])
-    win = ConfigurationDialog()
-    win.show()
-    app.exec_()
