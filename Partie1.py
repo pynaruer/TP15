@@ -1,4 +1,4 @@
-from Partie2 import *
+from PySide2.QtWidgets import *
 
 class SQLClientWindow(QWidget):
     def __init__(self):

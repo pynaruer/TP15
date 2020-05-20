@@ -1,4 +1,5 @@
 from Partie1 import *
+from Partie2 import *
 
 if __name__ == "__main__":
     app = QApplication([])
